@@ -1,0 +1,928 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+@media only screen and (max-width : 1400px)
+  html
+    font-size: 8px
+  .btn-login_green
+    line-height: 2.5rem
+    font-size: 16px
+  .main-content .step_content .drop-content .discount,.main-content .step_content .drop-content .free
+    font-size: 13px
+  .dropdown>a:after
+    top: 1px
+  .main-content .step_content:after
+    border-width: 25px 0 25px 30px
+  .message p:before
+    width: 7.5rem
+    height: 7.5rem
+  .btn-exchange
+    font-size: 2.5rem
+    width: 300px
+  .main-content .step_content .option
+    font-size: 16px
+  .main-content .step_content .option.active
+    font-size: 16px
+  .exchange-money
+    align-items: center
+  .top-line__nav nav>ul .dropdown ul
+    transform: translateX(calc(50% - 20.5px))
+  .faq .main-content p
+    font-size: 16px
+  .twice  .step_content .drop-parent_responsive .message
+    padding-left: 8rem
+    p
+      font-size: 16px
+    p:before
+      width: 5rem
+      height: 5rem
+      background-size: 2rem
+      margin-right: 1rem
+  .twice  .step_content .drop-parent_responsive
+    .verify
+      width: 80%
+
+  .referal
+    .step_content
+      .drop-content_responsive
+        .btn-exchange
+          margin: 4rem auto
+          font-size: 2.3rem
+          padding: 2.3rem 2.5rem
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px)
+  .btn-exchange
+    width: 250px
+  .main-content .step_content:after
+    border-width: 25px 0 25px 30px
+  .main-content .step_header
+    padding: 0 2rem 0 2rem
+  .main-content .step_content ul
+    min-width: 100%
+
+
+  .exchange-money
+    min-height: 600px
+  .message
+    width: 300px
+    p
+      font-size: 15px
+  .slide-tabs .main-content>ul .drop-parent>a span
+    margin-right: 2rem
+  .slide-tabs .main-content>ul .drop-parent>a
+    padding: 1.5rem 2rem 1.5rem 2rem
+    font-size: 2.6rem
+  .slide-tabs .main-content>ul .drop-parent .drop-content
+    margin-left: 11.5rem
+  .header-partner .title
+    font-size: 5rem
+  .slide-tabs .main-content p
+    padding-right: 19rem
+  .top-line__nav nav
+    margin-right: 2rem
+  .drop-parent_responsive
+    min-width: 50rem
+  .twice .step .step_content .agents
+    padding: 0 5rem
+  .twice .step .step_content .agents .form
+    padding-bottom: 4rem
+  .twice .step .step_content .form
+    padding: 4rem 0
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px)
+  .exchange-money
+    .container_right
+      display: none
+    .container_left
+      margin-right: 0
+  .btn-exchange
+    width: 300px
+  .message
+    width: 360px
+    p
+      font-size: 18px
+  .top-line__logo
+    width: 140px
+
+  .top-line
+    padding: 0 2rem
+    justify-content: space-between
+  .top-line__nav nav
+    margin-right: 2rem
+  .login-language .login_form form
+    min-width: 35rem
+  .main-content
+    flex-direction: column
+  .main-content .step_header
+    min-height: 9rem
+    padding: 0 5rem 0 5rem
+  .feedback_right
+    display: none
+  .feedback
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    background: #666
+    .mobile_title
+      display: block
+    &_left
+      justify-content: center
+      flex: 0
+    &_right
+      justify-content: center
+      flex: 0
+    .title
+      display: none
+    .load_more
+      display: block
+    .item
+      height: inherit
+      margin: 0
+      margin-bottom: 10rem
+      padding-top: 6rem
+      padding-bottom: 3rem
+      &:last-child
+        margin-bottom: 10rem
+      &_content
+        color: #414141
+        font-size: 1.75rem
+        font-weight: 600
+        line-height: 2.25rem
+        .name
+          color: #d7b569
+          font-size: 1.75rem
+          line-height: 2.25rem
+
+      &_photo
+        top: 0
+        left: 50%
+
+  .main-content .step_content:after
+    display: none
+  .feedback .item
+    padding-left: 0rem
+    justify-content: center
+    height: 19rem
+    &:last-child
+      margin-bottom: 0
+  .feedback
+    .feedback_left
+      .item
+        &:last-child
+          //margin-bottom: 10rem
+  .feedback
+    .feedback_right
+      margin-top: 10rem
+      margin-bottom: 5rem
+  .main-content .step:nth-child(2) .step_header
+    background-color: #75c599
+  .main-content .step:nth-child(2) .step_header .title:after
+    background: url('../img/content-header-icon2-2.png') no-repeat center
+    background-size: contain
+    background-color: #75c599
+  .main-content .step:last-child .step_header .title
+    font-size: 20px
+  .main-content .step:last-child .step_header .title:after
+    width: 34px
+    height: 34px
+  .main-content .step_header .title:after
+    width: 10rem
+    height: 4.5rem
+
+  .main-content .step:nth-child(1) .step_header .title:after
+    background: url('../img/content-header-icon1.png') no-repeat center
+    background-size: contain
+
+  .main-content .step:last-child .step_header .title:after
+    background: url('../img/content-header-icon3-3.png') no-repeat center
+    background-size: contain
+  .main-content .step_content .option
+    font-size: 2rem
+  .main-content .step,.main-content .step:last-child
+    width: 100%
+  .slide-tabs .main-content>ul .drop-parent .drop-content li:before
+    top: 7px
+    transform: translate(0,0)
+  .header-partner .title
+    font-size: 4.2rem
+  .header-partner .title:before
+    margin-right: 3rem
+    width: 15rem
+    height: 15rem
+    background-size: 8rem
+  .header-partner
+    min-height: 500px
+  .slide-tabs .main-content>ul .drop-parent>a
+    font-size: 2.5rem
+  .slide-tabs .main-content>ul .drop-parent .drop-content li
+    font-size: 1.9rem
+
+
+  .faq .main-content>ul .drop-parent .drop-content
+    margin-left: 7rem
+    p
+      padding-right: 7rem
+  .top-line__nav nav>ul>li>a
+    padding-left: 1rem
+    padding-right: 1rem
+  .top-line__nav nav>ul .dropdown ul
+    transform: translateX(calc(50% - 12.5px))
+  .drop-parent_responsive
+    min-width: 60rem
+  .twice .step:last-child .step_content
+    //padding-bottom: 0
+  .drop-parent_responsive:last-child
+    margin-bottom: 0
+  .twice .step .step_content .agents
+    margin-top: 17rem
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+  .top-line
+    position: relative
+  .top-line__nav
+    display: none
+    flex-direction: column
+    position: fixed
+    width: 100%
+    background: #414141
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    padding: 2rem 4rem 5rem 4rem
+    justify-content: center
+    overflow: scroll
+
+    nav
+      margin-right: 0
+      width: 100%
+      >ul
+        flex-direction: column
+        text-align: center
+        >li
+          >a
+            border-bottom: 2px solid #3c3c3c
+            width: 100%
+            padding: 1.9rem 1rem
+            &:hover
+              background: none
+
+  .top-line__nav nav>ul>li.active a
+    background: none
+    border-bottom: 2px solid #3c3c3c
+  .top-line__nav nav>ul .dropdown ul
+    justify-content: center
+    display: block
+    flex-direction: column
+    text-align: center
+    width: 100%
+    position: relative
+    left: 0
+    transform: translateX(0)
+    box-shadow: none
+    padding: 0
+    &:after
+      display: none
+    >li
+      >a
+        border-bottom: 2px solid #3c3c3c
+        width: 100%
+        justify-content: center
+        font-size: 2.4rem
+        font-weight: 400
+        padding: 1.9rem 1rem
+        line-height: inherit
+        &:last-child
+          border-bottom: 2px solid #3c3c3c
+        &:after
+          display: none
+
+  .top-line__nav nav>ul .dropdown
+    >a
+      display: none
+  .login-language
+    margin-top: 4rem
+  .login-language .login_form form
+    min-width: 38rem
+  .close-menu
+    display: flex
+    //top: -10px
+    //right: 2rem
+    margin-top: 0
+  .top-line__logo
+    display: none
+  .top-line
+    min-height: 9rem
+    padding: 0 2rem
+  .btn-login_green
+    font-size: 2.5rem
+  .main-content .step_content .another-option .option.active
+    box-shadow: none
+  .footer
+    ul
+      &:first-child
+        display: none
+  .main-content .step_content .mobile_options.hidden-option
+    top: 129%
+  .exchange-money .container_left
+    margin-right: 0
+    text-align: center
+
+  .exchange-money .container
+    margin-top: 5rem
+  .exchange-money
+    min-height: inherit
+    padding-bottom: 6rem
+  .login-language .login_form
+    transform: translateX(-36%)
+  .main-content .step_content .desktop-options a:first-child
+    border-radius: 0
+  .login-language
+    .login_form
+      z-index: 9
+      width: auto
+      position: fixed
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+
+      label
+        font-size: 18px !important
+      input
+        font-size: 21px !important
+      &:after
+        display: none
+      form
+        width: 360px
+        height: 667px
+        border-radius: 0
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        padding: 0 55px
+        .with-tip
+          margin-bottom: 0
+        .btn-fogot
+          margin: 30px 0
+          font-size: 16px
+          border-bottom: 1px solid black
+          text-decoration: none
+          line-height: 2.5rem
+        .btn-login_green
+          font-size: 17px
+          margin-bottom: 1rem
+        p
+          display: inline-block
+          margin-bottom: 0
+
+
+  .desktop-options
+    a.active
+      border-radius: 0 !important
+    a:last-child
+      &.active
+        border-radius: 6px
+  .main-content .step_content .hidden-option .option.active:last-child
+    border-radius: 0 0 6px 6px!important
+
+  .header-partner .title
+    font-size: 3.1rem
+    line-height: 5.5rem
+  .header-partner .title:before
+    height: 10rem
+    width: 10rem
+    background-size: 5rem
+  .slide-tabs .main-content>ul .drop-parent .drop-content li:before
+    top: 6px
+  .slide-tabs .main-content>ul .drop-parent>a
+    font-size: 2rem
+  .slide-tabs .main-content>ul .drop-parent .drop-content li
+    font-size: 1.8rem
+  .slide-tabs .main-content>ul .drop-parent .drop-content
+    margin-left: 9.5rem
+
+  .faq .main-content>ul .drop-parent .drop-content
+    margin-left: 5rem
+    p
+      padding-right: 4rem
+
+  .login-language
+    .logged_form
+      position: fixed
+      left: 50%
+      width: 300px
+      height: auto
+      top: 50%
+      transform: translate(-50%,-50%)
+      &:after
+        display: none
+
+
+@media only screen and (max-width : 539px)
+  .exchange-money .rate_currency-cost .currency-cost .price .sell,.exchange-money .rate_currency-cost .currency-cost .price .buy
+    color: #cd2b2b
+    font-size: 22px
+    font-weight: 700
+  .exchange-money .container_left .rate_currency-cost .currency-cost .price span
+    color: #666
+    font-size: 14px
+    font-weight: 400
+  .exchange-money .container_left .rate_currency-type a
+    font-size: 17px
+  .exchange-money .container_left .rate_currency-type a.active
+    font-size: 17px
+  .exchange-money .container_left .rate_currency-cost .currency-cost .buttons a
+    font-size: 17px
+  .main-content .step_header
+    min-height: 100px
+  .exchange-money .container_left .rate_currency-cost .currency-cost .price .buy
+    line-height: 3rem
+  .exchange-money .container_left .rate_currency-cost .currency-cost .price .sell
+    line-height: 3rem
+
+  .exchange-money .container_left .title
+    font-size: 30px
+  .exchange-money .container_left .title-info
+    font-size: 18px
+  .main-content .step_header .title
+    font-size: 24px
+  .main-content .step_content .option
+    font-size: 16px
+  .message
+    width: 270px
+    padding-left: 9rem
+    p
+      font-size: 14px
+      padding: 0
+      padding-right: 3rem
+      br
+        display: none
+      &:before
+        width: 45px
+        height: 45px
+        background-size: 3rem
+  .main-content .step_content .drop-content .form
+    width: 255px
+
+  .message_without-icon
+    padding: 0 2rem
+    p
+      padding-right: 0
+
+
+  .message_money-bag
+    p
+      a
+        line-height: 15px
+      &:before
+        background-size: 15px 18px
+
+  .btn-exchange
+    width: 255px
+  .btn_green-two
+    min-width: auto
+    a
+      font-size: 14px
+  .btn_green-two_left a
+    padding: 1.4rem 1rem 1.4rem 1rem
+  .btn_green-two_right a
+    padding: 1.4rem 1rem 1.4rem 2rem
+  .star-rating__ico:before
+    font-size: 35px !important
+  .star-rating__wrap
+    width: 200px
+  .message p
+    line-height: 2.2rem
+
+  .message_failed
+    p
+      &:before
+        background-size: 16px 16px
+  .main-content .step_content label
+    font-size: 18px!important
+  .main-content .step_content .input-bg-gray input
+    font-size: 21px
+
+
+  .header-partner
+    background: url("../img/partner-bg-mobile.png") no-repeat top center
+    background-size: cover
+    padding: 0 1.7rem
+    min-height: 465px
+    .title
+      font-size: 25px
+      line-height: 34px
+      flex-direction: column
+      align-items: flex-start
+      br
+        display: none
+      .mobile
+        display: inline-block
+  .header-partner .title:before
+    height: 70px
+    width: 70px
+    background-size: 32px
+    margin-bottom: 2.8rem
+  .slide-tabs .main-content>ul .drop-parent>a
+    font-size: 16px
+    font-weight: 700
+    line-height: 22px
+  .slide-tabs .main-content>ul .drop-parent.active>a span, .slide-tabs .main-content>ul .drop-parent>a span
+    height: 40px
+    min-width: 40px
+    width: 40px
+  .slide-tabs .main-content>ul .drop-parent .drop-content
+    margin-left: 5.8rem
+  .slide-tabs .main-content>ul .drop-parent .drop-content li, .slide-tabs .main-content>ul .drop-parent .drop-content p
+    font-size: 16px
+    line-height: 25px
+  .faq .main-content>ul .drop-parent .drop-content
+    margin-left: 3.4rem
+    p
+      padding-right: 2.5rem
+
+  .pagination
+    a
+      margin: 0 2px
+      font-size: 15px
+    .btn
+      margin: 0 2px
+
+  .news .main-content>ul .drop-parent.active>a span, .news .main-content>ul .drop-parent>a span
+    height: auto
+    min-width: auto
+    width: auto
+    font-size: 14px
+    line-height: 17px
+  .news .main-content>ul .drop-parent>a,.news .main-content>ul .drop-parent.active>a
+    font-size: 18px
+
+  .twice .btn-login_green
+    font-size: 16px
+    &:after
+      display: none
+  .main-content .step_content .pagination_small  a
+    width: 49px
+    height: 49px
+  .drop-parent_responsive>a
+    background-color: #f7f7f7
+    +ic-drop()
+
+  .drop-parent_responsive
+    &.closed
+      >a
+
+        &:after
+          //transition: all 2.5s ease
+          +trans(.5s)
+          transform: rotate(+180deg) translate(0,50%)
+
+
+  .twice .step:first-child .step_content
+    background: white
+  .drop-parent_responsive
+    width: 100%
+    min-width: 100%
+  .twice .step:first-child .step_content
+    padding-bottom: 0
+  .twice .step:nth-child(2) .step_content
+    padding-top: 0
+  .twice .step .step_content
+    input
+      width: 255px
+      font-size: 19px
+      line-height: 17px
+      padding: 1.7rem 2.5rem
+    .form
+      width: auto
+  .drop-parent_responsive>a
+    font-size: 19px
+    line-height: 17px
+    padding-left: 1.5rem
+  .btn-login_green
+    line-height: 2.1rem
+    padding: 2.2rem 2.5rem
+  .drop-parent_responsive>a:after
+    right: 1.5rem
+  .twice .btn-login_green
+    width: 255px
+
+  .profile
+    .twice .step .step_content .form
+      display: flex
+      flex-direction: column
+      align-items: center
+    .twice .step .step_content .form p
+      width: auto!important
+  .twice .step_content .drop-parent_responsive .verify
+    width: 255px
+  .twice .step .step_content .drop-parent_responsive .message
+    width: 87%
+
+  .referal
+    .step_content
+      .drop-content_responsive
+        .btn-exchange
+          margin: 4rem auto
+          font-size: 14px
+          padding: 2.3rem 2.5rem
+          line-height: 17px
+        .message
+          p
+            font-size: 12px
+            line-height: 15px
+  .referal .step_content .drop-content_responsive .referal2 .btn-exchange
+    margin-top: 1.6rem
+    margin-bottom: 4rem
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px)
+  .main-content .step_header
+    padding: 0 2rem
+  .feedback .item
+    padding-left: 2rem
+    padding-right: 2rem
+    justify-content: flex-start
+  .exchange-money .container_left .rate_currency-cost .currency-cost
+    min-width: auto
+    width: 90%
+    margin: 0 auto
+  .exchange-money .container_left .rate_currency-cost .currency-cost .price
+    padding-top: 4rem
+    padding-bottom: 2.5rem
+  .exchange-money .container_left .title
+    font-size: 30px
+  .exchange-money .container_left .title-info
+    font-size: 18px
+  .main-content .step_header .title
+    font-size: 24px
+  .main-content .step_content .option
+    font-size: 16px
+  .main-content .step_header .title:before
+    height: 45px
+    width: 45px
+  .main-content .step_header
+    padding: 0 1rem
+  .main-content .step:last-child .step_header .title:after
+    //width: 34px
+    //height: 34px
+  .main-content .step:last-child .step_header .title:before
+    //margin-right: .5rem
+  .main-content .step:last-child .step_header .title
+    font-size: 20px
+  .main-content .step:last-child .step_header .title:after
+    width: 34px
+    height: 34px
+  .main-content .step_header .title:after
+    width: 10rem
+    height: 4.5rem
+  .main-content .step_header
+    padding: 0 2rem
+  .feedback .item
+    min-width: auto
+    width: 100%
+
+  .exchange-money .container_left .title-info
+    padding: 0 3rem
+    br
+      display: none
+  .login-language
+    .login_form
+      form
+        width: 320px
+        height: 567px
+        padding: 0 32px
+  .login-language .login_form form
+    height: 467px
+
+
+@media only screen and (max-width : 359px)
+  .twice .step .step_content .agents
+    padding: 0 3rem
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 481px)
+  .mobile
+    display: none
+  .change-pass,.verify
+    display: none
+  .agent-link
+    display: none!important
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+  .top-line__logo_mobile,.top-line__nav_mobile-btn
+    display: none
+  .login_form,.logged_form
+    //.btn-close,.btn-login_new-account
+    .btn-close
+      display: none
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+  .message
+    padding-left: 104px
+    p
+      line-height: 22px
+  .message_without-icon
+    padding-left: 3rem
+
+
+@media only screen and (min-width : 1400px)
+    .message p
+      padding: 0
+
+@media only screen and (max-height : 500px)
+  .top-line__nav
+    padding-top: 6rem
+    overflow: hidden
+    nav
+      height: 200px
+      overflow: scroll
+      ul li a
+        padding: 1.3rem !important
+  .login-language .login_form
+    height: 300px
+    overflow-y: scroll
+    form
+      height: 450px
+
+
+@media only screen and (max-height : 640px)
+  .zoom-anim-dialog
+    height: calc(100vh - 5rem)
+    overflow-y: scroll
+    form
+      height: 600px
+
+
+// NEWS
+
+@media only screen and (max-width : 1900px)
+  ._two .bigtab table
+    width: 60rem
+  .bigtab table thead tr th:first-child, .bigtab .table-time
+    width: 20rem
+  .bigtab table thead tr th:last-child, .bigtab .table tbody tr td:last-child
+    width: 20rem
+  .bigtab
+    .step_content, .step_content, &.step:last-child .step_content
+      padding: 5rem 3rem
+@media only screen and (max-width : 1700px)
+  ._two .table
+    font-size: 1.6rem
+    width: 100%
+  ._two .table-time
+    width: 10rem
+  ._two .table tbody tr td:first-child, ._two .table tbody tr td:last-child
+    padding: 2rem
+  ._two .table tbody tr td:first-child
+    padding-right: 0
+  ._two .table tbody tr td:last-child
+    padding-right: 0
+  ._two .table-status
+    width: 14rem
+  ._two .table tbody tr td._line
+    padding-right: 0
+    text-align: center
+  ._two .bigtab table
+    width: 68rem
+@media only screen and (max-width : 1200px)
+  ._two .step .step_content, ._two .step:last-child .step_content
+    padding: 5rem 3rem
+  ._two .bigtab table
+    width: 54rem
+  .bigtab .table-time, .bigtab table thead tr th:first-child
+    width: 10rem
+
+@media only screen and (max-width : 991px)
+  .twice .drop-parent_responsive
+    max-width: 100%
+    width: 100%
+  ._two .table tbody tr td:first-child
+    width: auto
+    flex: 1
+    text-align: left
+  ._two .table tbody tr td._line, ._two .table td
+    width: auto
+    flex: 1
+    text-align: center
+  ._two .bigtab table
+    width: 100%
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    flex-wrap: wrap
+    thead, tbody
+      display: -webkit-flex
+      display: -moz-flex
+      display: -ms-flex
+      display: -o-flex
+      display: flex
+      flex-wrap: wrap
+      width: 100%
+      tr
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-wrap: wrap
+        width: 100%
+        td, th
+          width: auto !important
+          flex: 1
+    thead
+      font-size: 1.8rem
+@media only screen and (max-width : 767px)
+  ._two .table tbody tr td._line
+    flex: 1.3
+
+@media only screen and (max-width : 539px)
+  ._two .table tbody tr td:first-child, ._two .table tbody tr td:last-child
+    width: 100%
+    text-align: center
+    flex: none
+    justify-content: center
+  ._two .table tbody tr td._line, ._two .table td
+    width: auto
+    flex: none
+  ._two .table tbody tr
+    justify-content: center
+    padding: 1rem 0
+    td
+      padding: .5rem 2rem !important
+  ._two .table tbody tr td._line
+    padding-right: 2rem
+    &:before
+      display: none
+  ._two .step .step_content, ._two .step:last-child .step_content
+    padding-top: 0
+  .twice
+    padding-top: 5rem
+    .drop-parent_responsive>a
+      padding-left: 3rem
+    .drop-parent_responsive>a:after
+      right: 2.1rem
+  ._two .table tbody tr td._line, ._two .table td
+    font-size: 1.87rem
+    font-weight: 600
+  ._two .table tbody tr td:first-child, ._two .table tbody tr td:last-child
+    font-size: 1.623rem
+    font-weight: bold
+  ._two .step .step_content, ._two .step:last-child .step_content
+    padding: 0
+  ._two .table-status .status
+    width: 26px
+    height: 26px
+  ._two .bigtab .table tbody tr td:first-child, ._two .bigtab .table tbody tr td:last-child
+    width: auto
+    flex: 2
+  ._two .bigtab .table tbody tr td:first-child
+    text-align: left
+  ._two .bigtab .table tbody tr td:last-child
+    flex: 3
+    justify-content: space-between
+  ._two .bigtab .table tbody tr td._line
+    flex: 1
+    &:before
+      display: block
+  ._two .bigtab table thead,  ._two .bigtab table td
+    font-size: 14px !important
+  ._two .bigtab table thead tr th:first-child
+    flex: 1.5
+  ._two .bigtab table thead tr th:nth-child(2)
+    flex: 1
+  ._two .bigtab table thead tr th:last-child
+    flex: 4
