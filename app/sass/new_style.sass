@@ -408,6 +408,11 @@ $bgInputTriangles: #01215c
 .btn-logged, .btn-login.active:hover
   color: inherit
 
+.btn-logged, .btn-login, .login-language .language > a
+  transition: all .2s linear
+
+
+
 ._two
   &.main-content .step:after, &.main-content .step:before
     display: none
@@ -416,6 +421,157 @@ $bgInputTriangles: #01215c
   background-image: linear-gradient(to top, #b5bec3 0%, #edf4f6 100%)
   box-shadow: 0 6px 2.6px 0.4px rgba(0, 0, 0, 0.6), inset 0 14px 250px rgba(0, 0, 0, 0.6)
 
+
+.twice
+  .drop-parent_responsive > a
+    border-bottom: 3px solid #003664
+
+.btn-logged_green, .btn-login_green
+  box-shadow: 0 6px 5.3px 0.7px rgba(0,0,0,.6), inset 0 1px 11px rgba(0,0,0,.6)
+  box-shadow: none
+  background: #a7b6cd
+.btn-logged_green:hover, .btn-login_green:hover , .btn-logged_green:active:active, .btn-login_green:active:active
+  background: darken(#a7b6cd, 7%)
+
+.btn-logged_green:after, .btn-login_green:after
+  filter: hue-rotate(90deg)
+
+.btn-logged_new-account, .btn-login_new-account
+  border-color: darken(#a7b6cd, 7%)
+
+
+.main-content .step_content .pagination_small .next-item a:after, .pagination .next-item a:after
+  border-color: transparent $bgInputTriangles transparent transparent
+.main-content .step_content .pagination_small a:hover, .pagination a:hover
+  background: #a7b6cd
+
+.main-content .step_content .pagination_small ul li.active a, .pagination ul li.active a
+  background: $bgInputTriangles
+  box-shadow: none
+.main-content .step_content .pagination_small a, .pagination a
+  color: $bgInputTriangles
+.main-content .step_content .pagination_small .next-all a:after, .pagination .next-all a:after
+  border-color: transparent $bgInputTriangles transparent transparent
+.main-content .step_content .pagination_small .next-all a:before, .pagination .next-all a:before ,.main-content .step_content .pagination_small .prev-all a:before, .pagination .prev-all a:before
+  background-color: $bgInputTriangles
+.main-content .step_content .pagination_small .prev-item a:after, .pagination .prev-item a:after
+  border-color: transparent $bgInputTriangles transparent transparent
+.main-content .step_content .pagination_small .prev-all a:after, .pagination .prev-all a:after
+  border-color: transparent $bgInputTriangles transparent transparent
+
+
+.twice .step .step_content .agents .photo
+  border-color: #445b87
+
+
+.faq .main-content>ul .drop-parent>a, .news .main-content>ul .drop-parent>a, .partner .main-content>ul .drop-parent>a
+  background: #a7b6cd
+.faq .main-content>ul .drop-parent:nth-of-type(even)>a, .news .main-content>ul .drop-parent:nth-of-type(even)>a, .partner .main-content>ul .drop-parent:nth-of-type(even)>a
+  background: darken(#a7b6cd, 7%)
+
+.faq .main-content>ul .drop-parent>a span, .news .main-content>ul .drop-parent>a span, .partner .main-content>ul .drop-parent>a span
+  background: none
+  background-image: linear-gradient(to top, #b5bec3 0%, #edf4f6 100%)
+  box-shadow: 0 6px 5.3px 0.7px rgba(0,0,0,.6), inset 0 1px 45px rgba(0,0,0,.6)
+  border: 3px solid #bcc4c9
+  color: white
+
+.faq .main-content>ul .drop-parent.active>a span, .news .main-content>ul .drop-parent.active>a span, .partner .main-content>ul .drop-parent.active>a span
+  border-color: darken(#a7b6cd, 10%)
+.faq .main-content>ul .drop-parent.active>a, .news .main-content>ul .drop-parent.active>a, .partner .main-content>ul .drop-parent.active>a
+  background: lighten(#bcc4c9, 15%)
+
+
+
+
+.message_ellipses p:before
+  background-color: $bgActive
+  border-color: $bgInputTriangles
+
+.indicator .passed
+  background-color: $bgInputTriangles
+.indicator .passed:before
+  background-color: $bgInputTriangles
+.message_money-bag p a , .message_failed p a
+  color: $bgInputTriangles
+  border-color: $bgInputTriangles
+
+.message p:before ,  ._two .table-status .status
+  background-color: $bgActive
+  border-color: $bgInputTriangles
+.message span
+  color: $bgInputTriangles
+.discount p:before
+  background-color: $bgActive!important
+.discount a
+  color: $bgInputTriangles
+  border-color: $bgInputTriangles
+
+.message a
+  color: $bgInputTriangles
+  border-color: $bgInputTriangles
+
+.login-language .logged_form form .info span:before , .login-language .logged_form form .info span:nth-child(2):before, .login-language .logged_form form .info span:last-child:before
+  background-color: $bgActive
+  border-color: $bgInputTriangles
+
+.login-language .logged_form form .info span
+  color: $bgInputTriangles
+
+.twice .step .step_content .form .have-problem a
+  color: $bgInputTriangles
+  &:hover
+    text-decoration: none
+
+
+._two .table tbody tr td:first-child
+  color: $bgInputTriangles
+
+.main-content .step_content ul li>a:after, .policy input[type=checkbox]:checked+span:before
+  filter: hue-rotate(190deg)
+
+.drop-parent_responsive>a:after
+  filter: hue-rotate(190deg)
+
+.btn_green-two
+  box-shadow: none
+  a
+    border-bottom: 1px solid transparent
+    color: white
+
+
+.bigtab table thead tr:hover
+  background: transparent
+
+
+.faq .main-content>ul .drop-parent.active>a:after, .news .main-content>ul .drop-parent.active>a:after, .partner .main-content>ul .drop-parent.active>a:after
+  filter: hue-rotate(190deg)
+
+.faq .main-content>ul .drop-parent.active>a span, .news .main-content>ul .drop-parent.active>a span, .partner .main-content>ul .drop-parent.active>a span
+  border: 3px solid transparent
+.news .main-content>ul .drop-parent.active>a span
+  color: white
+
+.header-partner .title:before
+  filter: hue-rotate(167deg)
+
+.faq .main-content>ul .drop-parent.active.star>a span, .news .main-content>ul .drop-parent.active.star>a span, .partner .main-content>ul .drop-parent.active.star>a span
+  border-color: transparent
+
+.faq .main-content>ul .drop-parent .drop-content li:before, .news .main-content>ul .drop-parent .drop-content li:before, .partner .main-content>ul .drop-parent .drop-content li:before
+  filter: hue-rotate(167deg)
+
+.faq .main-content>ul .drop-parent.star>a, .news .main-content>ul .drop-parent.star>a, .partner .main-content>ul .drop-parent.star>a
+  filter: hue-rotate(167deg)
+
+
+
+
+
+.verify:after
+  background: none
+  border-right: 6px solid $bgInputTriangles
+  border-bottom: 6px solid $bgInputTriangles
 
 
 
