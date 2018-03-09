@@ -1,0 +1,541 @@
+//vars
+
+
+
+
+
+
+$colorAccent:  #01215c
+
+$bgHeaderFooter: #001336
+$hoverColor: darken(#edf4f6, 20%)
+$gradient: linear-gradient(to top, #b5bec3 0%, #edf4f6 100%)
+$bgOption: #a7b6cd
+$colorOption: #414141
+$bgActive: #a7b6cd
+
+$bgInputTriangles: #01215c
+
+
+
+//slaventii
+.top-line__nav nav>ul>li>a:hover
+  position: relative
+  background: transparent
+  //color: $hoverColor
+  &:before
+    //position: absolute
+    //content: ''
+    //top: 73%
+    //height: 8px
+    //width: 100%
+    //left: 0
+    //border-radius: 10px
+    //background: white
+    //background-image: linear-gradient(to top, #b5bec3 0%, #edf4f6 100%)
+    //box-shadow: 0 6px 5.3px 0.7px rgba(0, 0, 0, 0.6), inset 0 14px 250px rgba(0, 0, 0, 0.6)
+
+.top-line__nav nav>ul>li.active a
+  border-bottom: 3px solid transparent
+  color: white
+  position: relative
+  background: transparent
+  text-shadow: 0 6px 5.3px rgba(0, 0, 0, 0.6)
+  &:before
+    position: absolute
+    content: ''
+    top: 73%
+    height: 8px
+    width: 100%
+    left: 0
+    border-radius: 10px
+    //background: white
+    background-image: $gradient
+    box-shadow: 0 6px 5.3px 0.7px rgba(0, 0, 0, 0.6), inset 0 14px 250px rgba(0, 0, 0, 0.6)
+
+
+.top-line
+  background-color: $bgHeaderFooter
+
+.footer
+  background-color: $bgHeaderFooter
+
+.top-line__nav nav>ul .dropdown ul
+  background-color: lighten($bgHeaderFooter, 3%)
+  &:after
+    border-color: transparent transparent lighten($bgHeaderFooter, 3%) transparent
+.top-line__nav nav>ul .dropdown ul li a
+  border-color: $bgHeaderFooter
+
+
+.top-line__nav nav>ul .dropdown ul li a:after
+  background: none
+  width: 0
+  height: 0
+  border-style: solid
+  border-width: 7.5px 0 7.5px 11px
+  border-color: transparent transparent transparent $bgHeaderFooter
+.dropdown ul li a:hover
+  //color: $hoverColor
+
+
+.login-language .language>a:hover
+  color: #2f2f2f
+.login-language .language > a
+  padding: 1rem 2rem
+  background: none
+  background-image: $gradient
+  border: 4px solid #2f2f2f
+  border-radius: 6px
+  box-shadow: 0 6px 3.5px 0.5px rgba(0, 0, 0, 0.57), inset 0 14px 250px rgba(0, 0, 0, 0.6)
+  color: $colorAccent
+
+.login-language .language ul
+  background-color: $bgHeaderFooter
+  background: none
+  background-image: $gradient
+  border: 4px solid #2f2f2f
+  border-radius: 6px
+  box-shadow: 0 6px 3.5px 0.5px rgba(0, 0, 0, 0.57), inset 0 14px 250px rgba(0, 0, 0, 0.6)
+  color: $colorAccent
+  width: 100%
+
+.language.dropdown>a:after
+  background: url(../img/new_style/lang.png) no-repeat top center
+  background-size: contain
+
+.top-line__nav nav
+  margin-right: 5rem
+
+.btn-logged, .btn-login
+  background: none
+  background-image: $gradient
+  border: 4px solid #2f2f2f
+  border-radius: 6px
+  box-shadow: 0 6px 3.5px 0.5px rgba(0, 0, 0, 0.57), inset 0 14px 250px rgba(0, 0, 0, 0.6)
+  color: $colorAccent
+
+.btn-logged.active, .btn-login.active
+  background-color: $gradient
+  box-shadow: none
+
+.exchange-money .overlay
+  background: url(../img/new_style/samuel-zeller-34751.png) no-repeat top center
+  background-size: cover
+
+.btn-exchange
+  background: $bgActive
+  //background-image: linear-gradient(to top, #036bc4 0%, #036bc4 100%)
+  border-radius: 6px
+  box-shadow: 0 6px 1.8px 0.2px rgba(0, 0, 0, 0.83),  0 14px 25px rgba(0, 0, 0, 0.6)
+  color: $colorAccent
+  &:after
+    background: url(../img/new_style/exchange-arrows.png) no-repeat top center
+    background-size: contain
+  &:hover, &:active
+    background: darken($bgActive, 10%)
+
+.exchange-money .container_left .title span
+  color: white
+
+.exchange-money .container_left .rate_currency-type a.active
+  background: none
+  color: $colorAccent
+  background-image: linear-gradient(to top, #2f4050 0%, #edf4f6 100%)
+  box-shadow: 0 6px 2.6px 0.4px rgba(0, 0, 0, 0.6), inset 0 14px 250px rgba(0, 0, 0, 0.6)
+
+
+.exchange-money .container_left .rate_currency-type ul
+  border: none
+  background-color: transparent
+  background-image: linear-gradient(to top, white 0%, white 100%)
+  border-radius: 8px
+  box-shadow: 0 6px 3.8px 0.2px rgba(0, 0, 0, 0.46), inset 0 14px 250px rgba(0, 0, 0, 0.6)
+
+.exchange-money .container_left .rate_currency-type ul li a
+  background-color: white
+  background-image: linear-gradient(-12deg, #909090 0%, #bfbfbf 100%)
+  //border: 0.29px solid #af9356;
+  box-shadow: inset 1.7px 49px 4.5px 4.5px #eaebe8
+
+.exchange-money .container_left .rate_currency-type a:after
+  z-index: 1
+  background: transparent
+  background-image: linear-gradient(to top, #b5bec3 0%, #edf4f6 100%)
+  box-shadow: 0 6px 2.6px 0.4px rgba(0, 0, 0, 0.6), inset 0 14px 250px rgba(0, 0, 0, 0.6)
+
+
+
+.main-content .step_header
+  background-image: linear-gradient(to top, #b5bec3 0%, #edf4f6 100%)
+  box-shadow: 0 6px 5.3px 0.7px rgba(0, 0, 0, 0.6), inset 0 14px 250px rgba(0, 0, 0, 0.6)
+
+.main-content .step_header .title:before
+  background: none
+  border: none
+  border: 3px solid #bcc4c9
+  text-shadow: 0 1px 2.4px rgba(0, 0, 0, 0.4)
+  color: white
+
+  background-image: linear-gradient(to top, #b5bec3 0%, #edf4f6 100%)
+  border-radius: 30px
+  box-shadow: 0 6px 3.5px 0.5px rgba(0, 0, 0, 0.57), inset 0 14px 250px rgba(0, 0, 0, 0.6)
+  flex-shrink: 0
+  width: 60px
+  height: 60px
+
+
+.main-content .step_header .title:after
+  background: url(../img/new_style/send-icon.png) no-repeat center
+  background-size: contain
+  width: 66px
+  height: 77px
+.main-content .step_header
+  padding: 0 9rem 0 10rem
+
+.main-content .step:nth-child(2) .step_header .title:after
+  background: url(../img/new_style/receive-icon.png) no-repeat center
+  background-size: contain
+  width: 69px
+  height: 80px
+
+.main-content .step:last-child .step_header .title:after
+  background: url(../img/new_style/set-icon.png) no-repeat center
+  background-size: contain
+  width: 90px
+  height: 90px
+
+.main-content .step_content
+  background: #e1e3e4
+  //border-right: 3px solid blue
+  &:before
+    border-left: 3px solid #868d90
+    content: ''
+    position: absolute
+    top: 0
+    left: calc(100% - 2px)
+    height: 100%
+    width: 6px
+    background: #d0d0d0
+    z-index: 1
+.main-content .step_content:after
+  border-color: transparent transparent transparent #e1e3e4
+  left: calc(100% - 4px)
+  z-index: 5
+
+
+.main-content .step:nth-child(2) .step_content
+  background: #eaeaea
+.main-content .step:nth-child(2) .step_content:after
+  border-color: transparent transparent transparent #eaeaea
+
+
+.main-content .step
+  position: relative
+  &:after
+    z-index: 2
+    position: absolute
+    top: 529px
+    left: 100%
+    content: ''
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 25px 0 25px 30px
+    //border-width: 27px 0 27px 32px
+    border-color: transparent transparent transparent #868d90
+    transform: translateY(-50%)
+  &:before
+    z-index: 1
+    position: absolute
+    top: 529px
+    left: 100%
+    content: ''
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 29px 0 29px 34px
+    //border-width: 27px 0 27px 32px
+    border-color: transparent transparent transparent #d0d0d0
+    transform: translateY(-50%)
+
+
+.main-content .step:nth-child(2)
+  &:after
+    border-color: transparent transparent transparent #a8a8a8
+  &:before
+    border-color: transparent transparent transparent #e5e5e5
+  .step_content:before
+    border-left: 3px solid #a8a8a8
+    background: #e5e5e5
+
+
+.main-content .step:last-child
+  &:after,
+  &:before,
+  .step_content:before
+    display: none
+
+.main-content .step_content:after
+  top: 347px
+  transform: none
+//.twice
+//.main-content .step_content:after
+//  top: 330px
+//  transform: none
+.twice .step:first-child .step_content:after
+  top: 504px
+
+
+.main-content .step_content .option
+  background-color: $bgOption
+  //background-image: linear-gradient(-12deg, #909090 0%, #bfbfbf 100%)
+  background-image: linear-gradient(to top, #b5bec3 0%, #edf4f6 100%)
+  border-radius: 6px
+  //box-shadow:  1.7px 49px 4.5px 4.5px #eaebe8
+  box-shadow:  none
+  color: $colorOption
+  //transition: all 1.5s linear
+  position: relative
+  z-index: 10
+
+.main-content .step_content .option:hover
+  background-color: darken($bgActive, 5%)
+.main-content .step_content .option.active:hover
+  background: $bgActive
+
+.main-content .step_content .option.active
+  background: $bgActive
+  //background-image: linear-gradient(to top, #036bc4 0%, #036bc4 100%)
+  //background-image: linear-gradient(to top, #b5bec3 0%, #edf4f6 100%);
+  border-radius: 6px
+  box-shadow: none
+  color: $colorAccent
+  border: none
+  box-shadow: 0 6px 1.8px 0.2px rgba(0, 0, 0, 0.83),  0 14px 250px rgba(0, 0, 0, 0.6)
+  z-index: 8
+
+
+.main-content .step_content .option:after
+  background: none
+  width: 0
+  height: 0
+  border-style: solid
+  border-width: 6px 0 6px 8px
+  border-color: transparent transparent transparent  #2f2f2f
+.main-content .step_content .option.active:after
+  background: none
+  border-color: transparent transparent transparent  #01215c
+
+.main-content .step_content .option_another
+  //background-image: linear-gradient(to top, #b5bec3 0%, #edf4f6 100%);
+  background-image: linear-gradient(-12deg, #909090 0%, #bfbfbf 100%)
+  border-radius: 6px
+  box-shadow: 1.7px 49px 4.5px 4.5px #eaebe8
+  box-shadow: 0 6px 1.8px 0.2px rgba(0, 0, 0, 0.83),  0 14px 250px rgba(0, 0, 0, 0.6)
+
+
+.main-content .step_content .option_another:after
+  transform: rotate(90deg)
+
+.main-content .step_content ul li>a
+  border-bottom: 3px solid #003664
+
+.main-content .step_content input
+  border: 2px solid #eaeaea
+  border-radius: 6px
+  box-shadow: 0 6px 1.8px 0.2px rgba(0, 0, 0, 0.34), inset 0 14px 250px rgba(0, 0, 0, 0.6)
+
+
+
+.main-content .step_content .number .plus
+  background: none
+  width: 0
+  height: 0
+  border-style: solid
+  border-width: 0 6px 8px 6px
+  border-color: transparent transparent $bgInputTriangles transparent
+
+.main-content .step_content .number .minus
+  background: none
+  width: 0
+  height: 0
+  border-style: solid
+  border-width: 8px 6px 0 6px
+  border-color: $bgInputTriangles transparent transparent transparent
+
+
+.main-content .step_content .hidden-option a
+  background-color:  lighten($bgHeaderFooter, 3%)
+  border-color: $bgHeaderFooter
+
+.main-content .step_content .hidden-option a:after
+  background: 0 0
+  width: 0
+  height: 0
+  border-style: solid
+  border-width: 7.5px 0 7.5px 11px
+  border-color: transparent transparent transparent #001336
+
+
+.main-content .step_content .hidden-option a:hover
+  position: relative
+  background-color:  lighten($bgHeaderFooter, 4%)
+  //color:  $hoverColor
+.main-content .step_content .hidden-option:after
+  border-color: transparent transparent $bgHeaderFooter transparent
+
+
+.feedback_left
+  background-color: #01215c
+.feedback_right
+  background-color: #445b87
+
+.feedback .item_photo
+  border-color: #445b87
+  border: none
+  background: none
+
+
+
+.main-content .step_header .title:after
+  flex-shrink: 0
+
+
+.btn-logged, .btn-login:hover, .login-language .language>a:hover
+  color: white
+.btn-logged, .btn-login.active:hover
+  color: inherit
+
+._two
+  &.main-content .step:after, &.main-content .step:before
+    display: none
+
+
+
+
+
+@media only screen and (max-width : 1700px)
+  .main-content .step .step_header
+    padding: 0 5rem 0 5rem
+
+
+@media only screen and (max-width : 1400px)
+  .main-content .step_header .title:before
+    width: 6rem
+    height: 6rem
+  .main-content .step .step_header
+    padding: 0 8rem 0 8rem
+  .main-content .step_header .title:after
+    width: 4.6rem
+    height: 5.7rem
+  .main-content .step:nth-child(2) .step_header .title:after
+    width: 4.9rem
+    height: 6rem
+  .main-content .step:last-child .step_header .title:after
+    width: 7rem
+    height: 7rem
+  .login-language .language>a
+    font-size: 24px
+    line-height: 22px
+
+@media only screen and (max-width : 1200px)
+  .main-content .step .step_header
+    padding: 0 3rem 0 3rem
+  .top-line__nav nav
+    margin-right: 1rem
+
+@media only screen and (max-width : 991px)
+  .main-content .step
+    &:after,
+    &:before,
+    .step_content:before
+      display: none
+
+  .top-line__nav nav
+    margin-right: .5rem
+
+  .top-line
+    padding: 0 1rem
+  .btn-logged, .btn-login
+    margin-right: .5rem
+
+
+  .main-content .step:nth-child(1) .step_header .title:after
+    background: url(../img/new_style/send-icon.png) no-repeat center
+    background-size: contain
+
+
+  .main-content .step:nth-child(2) .step_header .title:after
+    background: url(../img/new_style/receive-icon.png) no-repeat center
+    background-size: contain
+
+
+  .main-content .step:last-child .step_header .title:after
+    background: url(../img/new_style/set-icon.png) no-repeat center
+    background-size: contain
+    width: 6rem
+
+  .main-content .step_content .drop-content
+    z-index: 1
+
+@media only screen and (max-width: 991px)
+  .feedback
+    background-color: #01215c
+  .feedback .mobile_title
+    background-color: #01215c
+
+  .main-content .step_content .option_another:hover
+    background-image: linear-gradient(-12deg, #909090 0%, #bfbfbf 100%)
+  .main-content .step_content .hidden-option .option.active
+    color: white
+
+
+
+@media only screen and (max-width: 767px)
+  .top-line__nav
+    z-index: 20
+  .main-content .step_content .option
+    z-index: 2
+  .top-line__nav nav>ul .dropdown ul
+    background: none
+  .top-line__nav nav>ul>li.active a:before
+    display: none
+  .top-line__nav nav>ul>li.active a
+    border-bottom: 2px solid #3c3c3c
+
+  .main-content .step_content .mobile_options.hidden-option
+    z-index: 15
+
+  .feedback_right
+    background: none
+  .top-line
+    padding: 0 3rem
+
+  .main-content .step_content .hidden-option a:after
+    border-width: 6px 0 6px 8px
+
+
+@media only screen and (max-width: 374px)
+  .main-content .step:last-child .step_header
+    padding: 0 1rem
+
+
+
+
+@media only screen and (min-width : 1401px)
+  .main-content .step:after
+    top: 593px
+    border-width: 51px 0 51px 71px
+  .main-content .step:before
+    top: 593px
+    border-width: 56px 0 56px 76px
+
+
+
+
+  .twice .step:first-child .step_content:after
+    top: 543px
+
+
+
